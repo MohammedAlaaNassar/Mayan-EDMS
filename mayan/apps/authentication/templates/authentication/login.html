@@ -34,7 +34,7 @@
                         {% if not setting_disable_password_reset %}
                             <hr>
                             <div>
-                                <a class="pull-right" href="{% url 'authentication:password_reset_view' %}">{% trans 'Forgot your password?' %}</a>
+                                <a style="color:crimson;" class="pull-right" href="{% url 'authentication:password_reset_view' %}">{% trans 'Forgot your password?' %}</a>
                             </div>
                         {% endif %}
                     </div>
