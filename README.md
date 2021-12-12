@@ -49,7 +49,7 @@
 
 <h2 align="center">Book</h2>
 
-The final version of the book "Exploring Mayan EDMS" available now!
+The final version of the book "Exploring Mayan EDMS" available now! try this.
 
 <p align="center">
     <a href="https://sellfy.com/p/um2fkx/">
