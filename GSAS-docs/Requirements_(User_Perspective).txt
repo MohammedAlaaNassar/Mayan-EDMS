@@ -1,0 +1,19 @@
+1- As a System user, I want to log in to the site to complete my application.
+
+2- as System Owner, I want to know the student’s bachelor degree to show him the related masters degree
+
+3- as a System user,  want to see the available Masters Degree to choose one
+
+4- as a System user, I want to see the available campus for my chosen master's degree to decide it is suited for me or not.
+
+5- as a System user, I want to know the student’s official information to confirm his personal application
+
+6- as a System Owner, I want Students to upload their Graduation Certificates.
+
+7- as a System Owner, I want Students to upload their Transcripts.
+
+8- as a System Owner, I want Students to upload their Recommendation Letters
+
+9- as a System Owner, I want students to upload their CVs.
+
+10- as a System Owner, I want Students to upload their Motivation Letters.
