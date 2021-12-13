@@ -1,0 +1,47 @@
+{% extends "layout_reviewer.jinja2" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>Applicants</h1>
+    <p class="important">
+      List of applicant students
+    </p>
+    
+<div class="panel panel-default">
+          <div class="panel-body">
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Student Name</th>
+            <th>Program</th>
+            <th>Application Date</th>
+            <td>
+              
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          {% for applicant in applicants %}
+            <tr>
+              <th scope="row">{{ applicant[0] }}</th>
+              <td>{{ applicant[1] }}</td>
+              <td>{{ applicant[14] }}</td>
+              <td>{{ applicant[13] }}</td>
+              <td><a href="/reviewer/applicant/details/{{ applicant[0] }}/" class="btn btn-xs btn-primary">View Details</a> | 
+                <a href="#" class="btn btn-xs btn-success">View Scores</a></td>
+            </tr>
+          {% endfor %}
+           
+        </tbody>
+      </table>
+
+      </div>
+      </div>
+{% endblock %}
