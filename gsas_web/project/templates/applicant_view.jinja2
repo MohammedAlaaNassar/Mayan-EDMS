@@ -1,0 +1,155 @@
+{% extends "layout_reviewer.jinja2" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>Applicant Details [ #{{ applicant[0] }} ]
+
+      <div class="pull-right">
+        <a href="/reviewer/applicant/list" class="btn btn-sm btn-danger">Back to List</a>
+      </div>
+    </h1>
+
+    <p class="important">
+    </p>
+    
+
+
+    <div class="row">
+      <div class="col-xs-9">
+
+
+
+
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            
+    
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Name</h3>
+            <p>{{ applicant[1] }}</p>
+          </div>
+          <div class="col-sm-6">
+            <h3>Program</h3>
+            <p>{{ applicant[14] }}</p>
+          </div>
+        </div>
+    
+    
+    <h2>Education Details</h2>
+    
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>university</h3>
+            <p>{{ applicant[3] }}</p>
+          </div>
+           <div class="col-sm-4">
+            <h3>Faculty</h3>
+            <p>{{ applicant[4] }}</p>
+          </div>
+           <div class="col-sm-4">
+            <h3>Department</h3>
+            <p>{{ applicant[5] }}</p>
+          </div>
+    
+          <div class="col-sm-4">
+            <h3>GPA</h3>
+            <p>{{ applicant[7] }}</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Graduation Year</h3>
+            <p>{{ applicant[6] }}</p>
+          </div>
+          <div class="col-sm-4">
+            
+          </div>
+        </div>
+    
+    
+        <h2>Contact Details</h2>
+    
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Phone</h3>
+            <p>+20123456789</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Email</h3>
+            <p>{{ applicant[2] }}</p>
+          </div>
+          <div class="col-sm-4">
+            
+          </div>
+          </div>
+    
+    <h2>Documents </h2>
+          <div class="row">
+        
+            <ul>
+              <li><a href="#/{{ applicant[8] }}">Birth Certificate</a></li>
+              <li><a href="#/{{ applicant[9] }}">Educational Degree certificate</a></li>
+              <li><a href="#{{ applicant[10] }}">Recommendation Letter</a></li>
+            </ul>
+    
+    
+    
+    
+        </div>
+    
+      </div>
+    </div> 
+
+
+      </div>
+      <div class="col-xs-3">
+
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">Scoring</div>
+          <div class="panel-body">
+            
+            
+
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Filling Application (x/10)</label>
+                <input type="number" class="form-control"  placeholder="" value="6" readonly>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">GPA  (x/10)</label>
+                <input type="number" class="form-control"  placeholder="" >
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Recommendation Letter  (x/10)</label>
+                <input type="number" class="form-control"  placeholder="" >
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Resume  (x/10)</label>
+                <input type="number" class="form-control"  placeholder="" >
+              </div>
+
+              <button type="submit" class="btn btn-success btn-block">Submit</button>
+
+            </form>
+
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    
+{% endblock %}
